@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %} {% load static %}
+
+{% block styles %}
+   <link rel="stylesheet" href="{% static './assets/css/styles.css' %}">   
+{% endblock styles %}
+
+{% block content %}
+    <div>
+        <h1>Merci de remplir le formaulaire</h1>
+    </div>
+    <form action="">
+        <input type="text" placeholder="Entrer votre nom">
+        <input type="submit" value="Envoyer">
+    </form>
+      
+{% endblock content %}
