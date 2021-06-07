@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Article
+from .models import Commande
 
 
 def create_article(request):
@@ -7,12 +7,12 @@ def create_article(request):
     if request.GET:
         name = request.GET.get('name')
         title = request.GET.get('title')
-        article = Article.objects.create(
+        article = Commande.objects.create(
             name=name,
             title=title
         )
         article.save()
-        article = Article.objects.all()
+        article = Commande.objects.all()
         context = {
             "article": article
         }
