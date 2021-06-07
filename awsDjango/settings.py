@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'awsDjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'aws_demo',
+        'NAME': 'demo_db',
         'USER': 'postgres',
         'PASSWORD': '10031998',
         'HOST': 'aws-demo-db.cojpspbocpv2.us-west-2.rds.amazonaws.com',
