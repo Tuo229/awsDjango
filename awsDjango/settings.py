@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'awsDemo.apps.AwsdemoConfig',
+    'awsDemo.apps.AppConfig',
     'awsDjango',
 ]
 
