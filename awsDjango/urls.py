@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import index
+from awsDemo.views import create_article
 
 urlpatterns = [
     path("", index),
+    path("article", create_article),
     path('admin/', admin.site.urls),
 ]
